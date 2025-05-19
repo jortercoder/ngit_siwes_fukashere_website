@@ -1,0 +1,529 @@
+/* Author: @Jorter_coder */
+/* the entire page should be padding 0, margin 0 */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* header section style */
+header{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0%;
+    background-color: #fff;
+    
+
+}
+header h1{
+    color: #00004e;
+    font-family: arial, sans-serif;
+    font-size: 35px;
+    text-align: center;
+    margin: 10px;
+    padding-top: 10px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 5px gray;
+    
+}
+#head img{
+    width: 60px;
+    height: 55px;
+    float: left;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+/* navigation bar */
+nav{
+    background-color: #00004e;
+    width: 100%;
+    height: 50px;
+    text-overflow:hidden;
+    padding-top: 15px;
+    box-sizing: border-box;
+    border-bottom-right-radius: 15px;
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.4);
+
+}
+nav ul li{
+    display: inline; 
+    
+}
+nav ul li a{
+    color: #fff;
+    margin-left: 20px;
+    padding: 20px;
+    text-decoration: none;
+    font-family: arial, sans-serif;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    transition: 0.5s;
+    color: #2585df;
+    text-decoration: underline;
+}
+/* main or home page of the website  */
+.main{
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("../images/fuk_senate.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+#main-text{
+    
+    height: auto;
+    width: 700px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    position: relative;
+    top: 35%;
+    box-shadow: 2px 3px 5px #00004e;
+    border-radius: 10px;
+    /* backdrop-filter: blur(5px); */
+    background-color: rgba(0,0,0,0.5);
+    
+}
+#main-text p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 23px;
+    font-style: italic;
+    color: #fff;
+    text-transform: capitalize;
+}
+#main-text h2{
+    text-align: center;
+    color: #fff;
+    font-family: arial, sans-serif;
+    font-size: 40px;
+    padding: 10px;
+    text-shadow: 3px 3px 5px #00004e;
+}
+#main-text button{
+    align-items: center;
+ 
+    margin: 10px;
+    position: relative;
+    left: 38%;
+    border: 2px solid #fff;
+    font-size: 20px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #00004e;
+
+}
+#main-text button:hover{
+    transition: 0.9s;
+    opacity: 0.7;   
+}
+
+/* style for the article section */
+article{
+    /* border: 2px solid #000; */
+    margin: 30px;
+    background-color: rgba(243, 237, 237, 0.4);
+    padding: 20px;
+    color: #00004e;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#intro-dspl{
+    display: flex;
+}
+
+#intro h3{
+    font-size: 40px;
+    text-transform: capitalize;
+    margin: 10px 20px;
+    letter-spacing: 3px;
+}
+#intro p{
+    text-align: justify;
+    width: 65%;
+    /* text-transform: capitalize; */
+    padding: 10px;
+    margin-left: 30px;
+    font-size: 25px;
+    text-indent: 30px;
+    line-height: 35px;
+    /* float: left; */
+}
+#intro img{
+    width: 250px;
+    height: 250px;
+    margin-left: 70px;
+    border-radius: 50%;
+   box-shadow: 1px 1px 2px black, 0 0 20px rgb(23, 23, 56), 0 0 4px ;;
+}
+#about-prjct{
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    border-left: 2px solid #00004e;
+    padding: 20px;
+}
+#about-prjct h4{
+    font-size: 40px;
+    padding: 5px 10px 10px 7px;
+    text-transform: capitalize;
+}
+#about-prjct p{
+    font-size: 25px;
+    padding: 5px;
+    line-height: 30px;
+}
+#meet-team{
+    margin: 30px 20px;
+    padding: 20px 10px;
+}
+#meet-team h4{
+    font-size: 40px;
+    padding: 5px 10px 10px 7px;
+    text-transform: capitalize;
+}
+#meet-team p{
+    font-size: 25px;
+    padding: 5px;
+    line-height: 35px;
+    text-align: justify;
+    text-indent: 20px;
+    width: 75%;
+    
+}
+
+
+/* sec-details = section details*/
+/* section details content information about a student with their profile  */
+#sec-details h2{
+text-align:center ;
+margin: 20px 10px 10px 10px;
+padding: 5px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 35px;
+font-weight: bold;
+color: #00004e;
+}
+.student{
+    height: auto;
+    width: 100%;
+    background-color: #fff;
+    display: flex
+}
+/* student profile*/
+.profile{
+    border-left: 1px solid #00004e;
+    border-bottom: 1px solid #00004e;
+    margin: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    height: 550px;
+    border-radius: 12px;
+    box-shadow: 3px 2px 5px gray;
+}
+.profile h3{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 22px;
+    padding: 3px;
+    margin: 2px;
+    color: #00004e;
+}
+.profile p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00004e;
+    font-size: 22px;
+    /* text-transform: capitalize; */
+}
+.profile-about{
+    color: rgb(8, 148, 241);
+    text-transform: capitalize;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+}
+.profile-about:hover{
+    color: red;
+}
+.images img{
+    width: 95%;
+    margin: 10px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    height: 430px;
+
+}
+/* style for every horizontal rule */
+hr{
+    border: 1px solid #000;
+}
+/* courses section */
+.courses-section{
+    /* border: 2px solid #000; */
+    margin: 40px 50px;
+    padding: 40px 20px;
+    background-color: rgba(231, 225, 225, 0.4);
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    height: auto;
+    
+}
+#display-course{
+    display: flex;
+}
+#course-head{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #00004e;
+    
+}
+.course{
+    width: 30%;
+    height: 200px;
+    /* border: 2px solid #000; */
+    box-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+    border-radius: 50px;
+    margin: 40px 20px;
+}
+.course-text{
+    margin: 30px;
+}
+.course p{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00004e;
+
+}
+#skills h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    margin: 50px 30px;
+    color: #00004e;
+}
+
+.tech-skill{
+    /* border: 2px solid #000; */
+    margin: 30px 10px 10px 50px;
+    padding-left: 20px;
+    width: 75%;
+}
+.tech-skill h6{
+    font-size: 20px;
+}
+
+/* html skill tracking bar */
+
+#html{
+    background-color: #00004e;
+    width: 70%;
+    border-radius: 40px;
+    margin: 15px 5px;
+    border: 2px solid #00004e;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+#prgrss-html{
+    color: #00004e;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* css skill tracking bar */
+
+#css{
+    background-color: #00004e;
+    width: 70%;
+    border-radius: 40px;
+    margin: 5px;
+    border: 2px solid #00004e;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+#prgrss-css{
+    color: #00004e;
+    width: 55%;   
+    background-color: #fff;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* boostrap skill tracking bar */
+
+#boostrap{
+    background-color: #00004e;
+    width: 70%;
+    border-radius: 40px;
+    margin: 15px 5px;
+    border: 2px solid #00004e;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+#prgrss-boostrap{
+    color: #00004e;
+    width: 20%;
+    background-color: #fff;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* javascript skill tracking bar */
+
+#javascript{
+    background-color: #00004e;
+    width: 70%;
+    border-radius: 40px;
+    margin: 5px;
+    border: 2px solid #00004e;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+#prgrss-javascript{
+    color: #00004e;
+    width: 10%;   
+    background-color: #fff;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* boostrap skill tracking bar */
+
+#graphic{
+    background-color: #00004e;
+    width: 70%;
+    border-radius: 40px;
+    margin: 15px 5px;
+    border: 2px solid #00004e;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+#prgrss-graphic{
+    color: #00004e;
+    width: 27%;
+    background-color: #fff;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/* javascript skill tracking bar */
+
+#networking{
+    background-color: #00004e;
+    width: 70%;
+    border-radius: 40px;
+    margin: 5px;
+    border: 2px solid #00004e;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.4);
+}
+#prgrss-networking{
+    color: #00004e;
+    width: 10%;   
+    background-color: #fff;
+    border-radius: 40px;
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#ngit{
+    margin-top: 50px;
+    color: #00004e;
+    padding-left: 20px;
+}
+
+/* style for the contact section */
+.contact{
+    width: 100%;
+    height: auto;
+    border: 2px solid #000;
+    background-color: #000;
+}
+.contact h4{
+    text-transform: capitalize;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+.contact p{
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+.contact-content{
+    display: flex;
+}
+/* style for the left handside of the contact container */
+#left-info{
+    height: 400px;
+    width: 45%;
+    margin: 0px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+.media h5{
+    color: rgb(167, 159, 159);
+    padding: 5px;
+    font-size: 18px;
+    margin: 5px;
+}
+/* style for the right handside of the contact container */
+.contact-right{
+    height: 400px;
+    width: 45%;
+}
+#fuk-logo img{ 
+    height: 120px;
+    width: 150px;
+    border-radius: 15px;
+    margin: 30px 70px 20px 200px;
+}
+/* s-m-h means: social media handle */
+#s-m-h{
+    padding: 5px;
+    line-height: 35px;
+    margin-left: 200px;
+}
+textarea{
+    width: 400px;
+    height: 50px;
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+textarea::placeholder{
+    color: #00004e;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* style for the footer section */
+
+footer{
+    padding: 3px 22px;
+    background-color: #000;
+    margin-top: 9px;
+    width: 100%;
+    outline-color: #fff;
+}
+#foot p{
+    color: #fff;
+    font-size: 17px;
+    font-family: serif;
+    line-height: -2px;
+    text-align: center;
+}

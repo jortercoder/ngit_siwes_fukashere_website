@@ -1,0 +1,545 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Base styles (Mobile-first) */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1000;
+    padding: 0.5rem 0;
+}
+
+#head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+#head img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header h1 {
+    color: #00004e;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 1px 3px gray;
+    letter-spacing: 2px;
+
+}
+
+/* Navigation */
+nav {
+    background: #00004e;
+    width: 100%;
+    padding: 0.5rem 0;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+nav ul li a:hover {
+    color: #2585df;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+/* Main Section */
+.main {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/fuk_senate.jpg") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-text {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px #00004e;
+}
+
+#main-text h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px #00004e;
+}
+
+#main-text p {
+    color: #fff;
+    font-size: 1rem;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+}
+
+#main-text button {
+    background: #00004e;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#main-text button:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+/* Article Section */
+article {
+    margin: 1.5rem 5%;
+    padding: 1rem;
+    background: rgba(243, 237, 237, 0.4);
+    border-radius: 8px;
+}
+
+#intro h3 {
+    font-size: 1.6rem;
+    color: #00004e;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#intro-dspl {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+#intro p {
+    font-size: 1rem;
+    text-align: justify;
+    text-indent: 1rem;
+    line-height: 1.8;
+    color: #00004e;
+}
+
+#intro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px #000;
+}
+
+#about-prjct {
+    margin: 1rem auto;
+    padding: 1rem;
+    border-left: 2px solid #00004e;
+}
+
+#about-prjct h4 {
+    font-size: 1.6rem;
+    color: #00004e;
+    margin-bottom: 0.5rem;
+}
+
+#about-prjct p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+#meet-team h4 {
+    font-size: 1.6rem;
+    color: #00004e;
+    margin-bottom: 0.5rem;
+}
+
+#meet-team p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+/* Team Profiles */
+#sec-details h2 {
+    font-size: 1.8rem;
+    color: #00004e;
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.student {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 3% 5%;
+}
+
+.profile {
+    background: #fff;
+    border: 1px solid #00004e;
+    border-radius: 12px;
+    padding: 0.5rem;
+    box-shadow: 2px 2px 4px gray;
+    text-align: center;
+}
+
+.profile img {
+    width: 100%;
+    max-width: 370px;
+    height: 28em;
+    border-radius: 25px 25px 0 0;
+}
+
+.profile h3 {
+    font-size: 1.2rem;
+    color: #00004e;
+    margin: 0.5rem 0;
+}
+
+.profile p {
+    font-size: 1rem;
+    color: #00004e;
+}
+
+.profile-about {
+    color: #0894f1;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.profile-about:hover {
+    color: red;
+}
+
+hr {
+    border: 1px solid #000;
+    margin: 0.5rem 0;
+}
+
+/* Courses Section */
+.courses-section {
+    margin: 1.5rem 5%;
+    padding: 1.5rem;
+    background: rgba(231, 225, 225, 0.4);
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+#course-head h4 {
+    font-size: 1.8rem;
+    color: #00004e;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#display-course {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.course {
+    background: #fff;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.course p {
+    font-size: 1rem;
+    color: #00004e;
+    margin: 0.5rem 0;
+}
+
+/* Technical Skills */
+#skills h4 {
+    font-size: 1.8rem;
+    color: #00004e;
+    margin: 1.5rem 3rem;
+    /* text-align: center; */
+}
+
+.tech-skill {
+    margin: 1rem 5%;
+}
+
+.tech-skill h6 {
+    font-size: 1rem;
+    color: #00004e;
+    margin-bottom: 0.5rem;
+}
+
+#html, #css, #boostrap, #javascript, #graphic, #networking {
+    background: #00004e;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    border: 2px solid #00004e;
+    margin: 0.5rem 0;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+#prgrss-html, #prgrss-css, #prgrss-boostrap, #prgrss-javascript, #prgrss-graphic, #prgrss-networking {
+    color: #00004e;
+    background: #fff;
+    border-radius: 20px;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+}
+
+#prgrss-html { width: 85%; }
+#prgrss-css { width: 65%; }
+#prgrss-boostrap { width: 80%; }
+#prgrss-javascript { width: 50%; }
+#prgrss-graphic { width: 35%; }
+#prgrss-networking { width: 65%; }
+
+#ngit {
+    text-align: left;
+    color: #00004e;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Contact Section */
+.contact {
+    background: #000;
+    color: #fff;
+    padding: 1.5rem 5%;
+}
+
+.contact h4 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact p {
+    font-size: 1rem;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#left-info, .contact-right {
+    width: 100%;
+    padding: 1rem;
+}
+
+.media h5 {
+    font-size: 1rem;
+    color: #a79f9f;
+    line-height: 1.8;
+}
+
+#fuk-logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+#s-m-h {
+    text-align: center;
+    line-height: 2;
+}
+
+textarea {
+    width: 100%;
+    max-width: 400px;
+    height: 80px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-family: Arial, sans-serif;
+    margin-top: 0.3rem;
+}
+
+textarea::placeholder {
+    color: #00004e;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-top: 2px solid #fff;
+}
+
+#foot p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Media Queries */
+
+/* Tablets (768px and up) */
+@media (min-width: 768px) {
+    #head {
+        justify-content: space-between;
+        padding: 0 2rem;
+    }
+
+    #head img {
+        width: 50px;
+        height: 50px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .main {
+        height: 60vh;
+    }
+
+    #main-text h2 {
+        font-size: 2.2rem;
+    }
+
+    #main-text p {
+        font-size: 1.2rem;
+    }
+
+    #intro-dspl {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    #intro p {
+        width: 60%;
+        font-size: 1.1rem;
+    }
+
+    #intro img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #about-prjct, #meet-team {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .student {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #display-course {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #left-info, .contact-right {
+        width: 48%;
+    }
+
+    #fuk-logo img {
+        margin: 1rem 0;
+    }
+
+    #s-m-h {
+        text-align: left;
+        margin-left: 0;
+    }
+}
+
+/* Desktops (1024px and up) */
+@media (min-width: 1024px) {
+    .main {
+        height: 70vh;
+    }
+
+    #main-text {
+        max-width: 800px;
+    }
+
+    #main-text h2 {
+        font-size: 2.5rem;
+    }
+
+    #main-text p {
+        font-size: 1.3rem;
+    }
+
+    #intro h3, #about-prjct h4, #meet-team h4, #course-head h4, #skills h4, #sec-details h2 {
+        font-size: 2rem;
+    }
+
+    #intro p, #about-prjct p, #meet-team p {
+        font-size: 1.2rem;
+    }
+
+    .student {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #display-course {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tech-skill {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    #fuk-logo img {
+        margin: 1rem auto;
+    }
+}
