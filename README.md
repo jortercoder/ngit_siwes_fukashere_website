@@ -1,2 +1,2 @@
 # ngit_siwes_fukashere_website
-This website we develop it to showcase of our passion, creativity and  what we have built as aspiring tech professionals.
+This website we develop it to showcase of our talent, passion, creativity and show  what we have learn in the journey in aspiring tech professionals.
