@@ -97,6 +97,7 @@ nav ul li a:hover {
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 5px #00004e;
+
 }
 
 #main-text h2 {
@@ -115,15 +116,19 @@ nav ul li a:hover {
 
 #main-text button {
     background: #00004e;
-    color: #fff;
+   
     border: 2px solid #fff;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     font-size: 1rem;
     cursor: pointer;
 }
+#main-text button a{
+     color: #fff;
+     text-decoration: none;
+}
 
-#main-text button:hover {
+#main-text button a:hover {
     opacity: 0.7;
     transition: opacity 0.3s;
 }
@@ -437,7 +442,7 @@ footer {
 
     nav ul li a {
         font-size: 1rem;
-        padding: 0.5rem 1rem;
+        padding: 1.5rem 1rem;
     }
 
     .main {
@@ -445,7 +450,7 @@ footer {
     }
 
     #main-text h2 {
-        font-size: 2.2rem;
+        font-size: 0.5rem;
     }
 
     #main-text p {
